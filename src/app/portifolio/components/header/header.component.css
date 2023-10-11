@@ -10,13 +10,6 @@ header{
   align-items: center;
 }
 
-.header_author img{
-  width: auto;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 12px;
-}
-
 .header_list{
   display: flex;
   align-items: center;
