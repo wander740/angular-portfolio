@@ -1,0 +1,14 @@
+
+@media screen and (min-width: 700px){
+  .container_card{
+    flex-direction: row;
+  }
+
+  .container_card-img{
+    width: 40%;
+  }
+
+  .container_card-text{
+    width: 60%;
+  }
+}

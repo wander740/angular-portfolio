@@ -11,4 +11,8 @@ export class HomePageComponent {
     console.log(target);
     target.scrollIntoView({behavior: 'smooth'});
   }
+
+  clickCard(){
+    window.location.href = 'https://post-angular-e5718.web.app/news';
+  }
 }
