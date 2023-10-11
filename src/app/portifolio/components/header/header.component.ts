@@ -9,6 +9,8 @@ export class HeaderComponent {
   @Output() about = new EventEmitter(false);
   @Output() experience = new EventEmitter(false);
   @Output() projects = new EventEmitter(false);
+  @Output() skills = new EventEmitter(false);
+  @Output() contact = new EventEmitter(false);
 
   onAbout(){
     this.about.emit(true);
@@ -20,5 +22,13 @@ export class HeaderComponent {
 
   onProjects(){
     this.projects.emit(true);
+  }
+
+  onHabilidades(){
+    this.skills.emit(true);
+  }
+
+  onContato(){
+    this.contact.emit(true);
   }
 }
