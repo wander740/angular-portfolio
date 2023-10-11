@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+  scroll(target :HTMLElement){
+    console.log(target);
+    target.scrollIntoView({behavior: 'smooth'});
+  }
 }

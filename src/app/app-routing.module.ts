@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'postifolio'},
+  { path: '', pathMatch: 'full', redirectTo: 'portfolio'},
   {
-    path: 'postifolio',
+    path: 'portfolio',
     loadChildren: () => import('./portifolio/portifolio.module').then(m => m.PortifolioModule)
   }
 ];

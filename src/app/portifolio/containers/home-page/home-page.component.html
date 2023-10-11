@@ -1,1 +1,23 @@
-<p>home-page works!</p>
+<app-header
+  (about)="scroll(body_about)"
+  (experience)="scroll(body_experience)"
+  (projects)="scroll(body_projects)"
+></app-header>
+
+<section class="body_page">
+  <div id="body_about" #body_about>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a eligendi quisquam cum asperiores quibusdam. Corrupti ipsam a, omnis assumenda labore ea explicabo, recusandae fugiat repudiandae, odit distinctio quas laborum?</p>
+  </div>
+  <hr>
+  <div id="body_experience" #body_experience>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a eligendi quisquam cum asperiores quibusdam. Corrupti ipsam a, omnis assumenda labore ea explicabo, recusandae fugiat repudiandae, odit distinctio quas laborum?</p>
+  </div>
+  <hr>
+  <div id="body_projects" #body_projects>
+
+  </div>
+
+  <hr>
+</section>
