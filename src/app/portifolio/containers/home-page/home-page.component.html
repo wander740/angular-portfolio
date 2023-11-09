@@ -8,15 +8,33 @@
 <app-banner></app-banner>
 
 <section class="body_page">
-  <div id="body_about" #body_about>
-    <h1>Sobre mim</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a eligendi quisquam cum asperiores quibusdam. Corrupti ipsam a, omnis assumenda labore ea explicabo, recusandae fugiat repudiandae, odit distinctio quas laborum?</p>
+  <div #body_about>
+    <app-about #body_about></app-about>
   </div>
   <hr>
 
   <div id="body_skills" #body_skills>
     <h1>Habilidades</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a eligendi quisquam cum asperiores quibusdam. Corrupti ipsam a, omnis assumenda labore ea explicabo, recusandae fugiat repudiandae, odit distinctio quas laborum?</p>
+    <app-card
+      cover="assets/images/angular.png"
+      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+    ></app-card>
+
+    <app-card
+      cover="assets/images/html5.png"
+      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+    ></app-card>
+
+    <app-card
+      cover="assets/images/css.png"
+      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+    ></app-card>
+
+    <app-card
+      cover="assets/images/java.png"
+      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+    ></app-card>
+
   </div>
   <hr>
 
@@ -29,7 +47,8 @@
     <h1>Projetos</h1>
     <app-card
       cover="assets/images/crud-angular.png"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+      title="Plataforma de postagem de notícias"
+      text="Um site feito com angular, spring e postgresql que permite o registro e acesso a notícias."
       (card)="clickCard()"
     ></app-card>
   </div>

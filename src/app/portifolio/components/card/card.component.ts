@@ -11,7 +11,7 @@ export class CardComponent {
   @Input()
   title: string = '';
   @Input()
-  text: string = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore delectus nesciunt maiores, quo quisquam officiis tenetur doloremque fugit, necessitatibus harum reiciendis error aliquam, iure assumenda? Cumque sit deserunt iusto maxime!]';
+  text: string = '';
 
   @Output() card = new EventEmitter(false);
 
