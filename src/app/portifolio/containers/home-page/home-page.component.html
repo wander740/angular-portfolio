@@ -3,13 +3,16 @@
   (experience)="scroll(body_experience)"
   (projects)="scroll(body_projects)"
   (skills)="scroll(body_skills)"
+  (contact)="scroll(body_contact)"
 ></app-header>
 
 <app-banner></app-banner>
 
 <section class="body_page">
   <div #body_about>
-    <app-about #body_about></app-about>
+    <app-about #body_about
+      text="Olá, meu nome é Wanderson e eu sou desenvolvedor back e front end e venho me especializando em criar sites web com foco em usabilidade e simplicidade."
+    ></app-about>
   </div>
   <hr>
 
@@ -17,22 +20,23 @@
     <h1>Habilidades</h1>
     <app-card
       cover="assets/images/angular.png"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+      title="Angular"
+      text="Framework de código aberto desenvolvido pelo Google para a criação de aplicativos da web dinâmicos e interativos. Ele utiliza uma abordagem orientada a componentes para a construção de interfaces."
     ></app-card>
 
     <app-card
       cover="assets/images/html5.png"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+      title="HTML"
     ></app-card>
 
     <app-card
       cover="assets/images/css.png"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+      title="CSS"
     ></app-card>
 
     <app-card
       cover="assets/images/java.png"
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo"
+      title="Java"
     ></app-card>
 
   </div>
@@ -40,7 +44,8 @@
 
   <div id="body_experience" #body_experience>
     <h1>Experiência</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a eligendi quisquam cum asperiores quibusdam. Corrupti ipsam a, omnis assumenda labore ea explicabo, recusandae fugiat repudiandae, odit distinctio quas laborum?</p>
+    <p>Eu trabalhei durante um ano no TST principalmente no sistema SEI. O SEI é um sistema interno usado em vários órgão públicos para trâmite de processos administrativos .Auxiliando na criação de formulários para integração no sistema. Também exerce função de administrador do sistema, cadastrando e arquivando processos enviados.</p><br>
+    <p>Também era responsável pela manutenção e atualização dos sites envolvendo o sistema.</p>
   </div>
   <hr>
   <div id="body_projects" #body_projects>
@@ -57,7 +62,7 @@
 
 </section>
 
-<footer style="display: flex; align-items: center; flex-direction: column; margin: 1rem 0;">
+<footer style="display: flex; align-items: center; flex-direction: column; margin: 1rem 0;" #body_contact>
 
   <div style="display: flex; margin: .6rem 0 1rem 0;">
     <img style="border-radius: 50%; background-color: #fff; width: 35px; margin-right: .5rem;" src="assets/icons/social.png" alt="">
