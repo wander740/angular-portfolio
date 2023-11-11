@@ -13,6 +13,6 @@ export class HomePageComponent {
   }
 
   clickCard(){
-    window.location.href = 'https://post-angular-e5718.web.app/news';
+    window.open('https://post-angular-e5718.web.app/news', "_blank");
   }
 }

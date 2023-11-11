@@ -9,35 +9,41 @@
 <app-banner></app-banner>
 
 <section class="body_page">
-  <div #body_about>
+  <div id="body_about" #body_about>
+    <h1>Sobre mim</h1>
     <app-about #body_about
       text="Olá, meu nome é Wanderson e eu sou desenvolvedor back e front end e venho me especializando em criar sites web com foco em usabilidade e simplicidade."
+      cover="assets/images/no-image.png"
     ></app-about>
   </div>
   <hr>
 
   <div id="body_skills" #body_skills>
     <h1>Habilidades</h1>
-    <app-card
+    <app-about
       cover="assets/images/angular.png"
       title="Angular"
       text="Framework de código aberto desenvolvido pelo Google para a criação de aplicativos da web dinâmicos e interativos. Ele utiliza uma abordagem orientada a componentes para a construção de interfaces."
-    ></app-card>
+    ></app-about>
 
-    <app-card
+    <app-about
       cover="assets/images/html5.png"
       title="HTML"
-    ></app-card>
+      text="É a linguagem padrão para criar páginas e aplicações web que estrutura o conteúdo na web.
+      "
+    ></app-about>
 
-    <app-card
+    <app-about
       cover="assets/images/css.png"
       title="CSS"
-    ></app-card>
+      text="É uma linguagem usada para descrever a apresentação de um documento escrito em HTML. Ela permite controlar cores, fontes, layout e outros aspectos visuais das páginas web."
+    ></app-about>
 
-    <app-card
+    <app-about
       cover="assets/images/java.png"
       title="Java"
-    ></app-card>
+      text="Linguagem de programação orientada a objetos que é usada para desenvolver aplicativos em uma ampla gama de dispositivos. É conhecida por sua portabilidade e segurança robusta."
+    ></app-about>
 
   </div>
   <hr>
@@ -62,13 +68,7 @@
 
 </section>
 
-<footer style="display: flex; align-items: center; flex-direction: column; margin: 1rem 0;" #body_contact>
+<div #body_contact>
+  <app-footer></app-footer>
+</div>
 
-  <div style="display: flex; margin: .6rem 0 1rem 0;">
-    <img style="border-radius: 50%; background-color: #fff; width: 35px; margin-right: .5rem;" src="assets/icons/social.png" alt="">
-
-    <img style="border-radius: 50%; background-color: #fff; width: 35px;" src="assets/icons/social2.png" alt="">
-  </div>
-
-  <span>© 2023 Wanderson Ramos</span>
-</footer>

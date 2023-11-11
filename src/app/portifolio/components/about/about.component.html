@@ -1,7 +1,11 @@
 <div id="body_about" >
-  <h1>Sobre mim</h1>
-  <div class="about-content">
+
+  <div class="about-text">
+    <h1>{{ title }}</h1>
     <p>{{ text }}</p>
-    <img src="assets/images/no-image.png" alt="">
+  </div>
+
+  <div class="about-img">
+    <img [src]="cover" alt="">
   </div>
 </div>

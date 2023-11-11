@@ -1,0 +1,18 @@
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.footer_content{
+  display: flex;
+  margin: .6rem 0 1rem 0;
+}
+
+.footer_content img{
+  border-radius: 50%;
+  background-color: #fff;
+  width: 35px;
+  margin-right: .5rem;
+}

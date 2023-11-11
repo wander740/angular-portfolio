@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent,
     BannerComponent,
     CardComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
