@@ -12,7 +12,14 @@ export class HomePageComponent {
     target.scrollIntoView({behavior: 'smooth'});
   }
 
-  clickCard(){
-    window.open('https://post-angular-e5718.web.app/news', "_blank");
+  clickCard(proj: string){
+    switch(proj){
+      case '1':
+        window.open('https://post-angular-e5718.web.app/news', "_blank");
+        break;
+      case '2':
+        window.open('https://passo-leve.web.app/sneaker', "_blank");
+        break;
+    }
   }
 }

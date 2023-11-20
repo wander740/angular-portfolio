@@ -8,6 +8,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CardComponent } from './components/card/card.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CdnPipe } from './pipes/cdn.pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BannerComponent,
     CardComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    CdnPipe
   ],
   imports: [
     CommonModule,

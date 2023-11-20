@@ -13,7 +13,7 @@
     <h1>Sobre mim</h1>
     <app-about #body_about
       text="Olá, meu nome é Wanderson e eu sou desenvolvedor back e front end e venho me especializando em criar sites web com foco em usabilidade e simplicidade."
-      cover="assets/images/no-image.png"
+      cover="{{'assets/images/img2.jpg' | cdn}}"
     ></app-about>
   </div>
   <hr>
@@ -21,26 +21,26 @@
   <div id="body_skills" #body_skills>
     <h1>Habilidades</h1>
     <app-about
-      cover="assets/images/angular.png"
+      cover="{{'assets/images/angular.png' | cdn}}"
       title="Angular"
       text="Framework de código aberto desenvolvido pelo Google para a criação de aplicativos da web dinâmicos e interativos. Ele utiliza uma abordagem orientada a componentes para a construção de interfaces."
     ></app-about>
 
     <app-about
-      cover="assets/images/html5.png"
+      cover="{{'assets/images/html5.png' | cdn}}"
       title="HTML"
       text="É a linguagem padrão para criar páginas e aplicações web que estrutura o conteúdo na web.
       "
     ></app-about>
 
     <app-about
-      cover="assets/images/css.png"
+      cover="{{'assets/images/css.png' | cdn}}"
       title="CSS"
       text="É uma linguagem usada para descrever a apresentação de um documento escrito em HTML. Ela permite controlar cores, fontes, layout e outros aspectos visuais das páginas web."
     ></app-about>
 
     <app-about
-      cover="assets/images/java.png"
+      cover="{{'assets/images/java.png' | cdn}}"
       title="Java"
       text="Linguagem de programação orientada a objetos que é usada para desenvolver aplicativos em uma ampla gama de dispositivos. É conhecida por sua portabilidade e segurança robusta."
     ></app-about>
@@ -57,10 +57,16 @@
   <div id="body_projects" #body_projects>
     <h1>Projetos</h1>
     <app-card
-      cover="assets/images/crud-angular.png"
+      cover="{{'assets/images/crud-angular.png' | cdn}}"
       title="Plataforma de postagem de notícias"
       text="Um site feito com angular, spring e postgresql que permite o registro e acesso a notícias."
-      (card)="clickCard()"
+      (card)="clickCard('1')"
+    ></app-card>
+    <app-card
+      cover="{{'assets/images/shoes_store.png' | cdn}}"
+      title="Front end de um site de compra de tênis"
+      text="Site feito com angular."
+      (card)="clickCard('2')"
     ></app-card>
   </div>
   <hr>

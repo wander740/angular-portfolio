@@ -12,7 +12,6 @@ hr{
 
 #body_skills{
   width: 100%;
-  margin-bottom: 1rem;
   margin: 3rem 0;
 }
 
@@ -20,26 +19,26 @@ hr{
   margin-bottom: .5rem;
   text-align: center;
   font-size: 40px;
-  margin-bottom: 2rem;
 }
 
 #body_experience{
   width: 100%;
-  margin-bottom: 1rem;
   margin: 3rem 0;
 }
 
 #body_experience h1{
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 40px;
-  margin-bottom: 2rem;
+}
+
+#body_experience p{
+  font-size: 25px;
 }
 
 #body_about h1{
-  margin-bottom: .5rem;
+  margin: .5rem 0;
   font-size: 40px;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
