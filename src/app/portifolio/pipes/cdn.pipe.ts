@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { globalEnvironment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
 
 @Pipe({
   name: 'cdn'
@@ -7,8 +7,8 @@ import { globalEnvironment } from 'src/environments/environment';
 export class CdnPipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): unknown {
-    if(globalEnvironment.production) {
-      return `${globalEnvironment.cdnHost}/${value}`;
+    if(environment.production) {
+      return `${environment.cdnHost}/${value}`;
     }
     return value;
   }
