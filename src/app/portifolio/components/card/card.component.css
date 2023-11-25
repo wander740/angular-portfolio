@@ -1,7 +1,7 @@
 .container_card{
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: 5rem 0;
   cursor: pointer;
 }
@@ -41,4 +41,5 @@
 
 .container_card-text p{
   font-size: 25px;
+  margin-bottom: 1rem;
 }
