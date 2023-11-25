@@ -10,9 +10,12 @@ header{
   align-items: center;
 }
 
+.header_menu{
+  display: block;
+}
+
 .header_list{
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .header_list li{
@@ -30,4 +33,8 @@ header{
 
 .header_list li button:hover{
   background-color: #7a7878;
+}
+
+.menuHeght{
+  padding: 1rem;
 }

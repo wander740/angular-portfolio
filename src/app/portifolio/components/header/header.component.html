@@ -1,8 +1,8 @@
-<header>
+<header (window:resize)="resizeDisplay()">
   <div class="header_author">
     <p>Wanderson Ramos</p>
   </div>
-  <ul class="header_list">
+  <ul id="itens" class="header_list">
     <li><button (click)="onAbout()">Sobre</button></li>
     <li><button (click)="onHabilidades()">Habilidades</button></li>
     <li><button (click)="onExperience()">Experiência</button></li>
@@ -10,4 +10,15 @@
 
     <li><button (click)="onContato()">Contato</button></li>
   </ul>
+  <i class="material-icons header_menu" (click)="clickMenu()">menu</i>
 </header>
+<section class="menuHeght" [ngStyle]="{display: display}">
+  <ul id="itens" class="header_list" [ngStyle]="{display: display}">
+    <li><button (click)="onAbout()">Sobre</button></li>
+    <li><button (click)="onHabilidades()">Habilidades</button></li>
+    <li><button (click)="onExperience()">Experiência</button></li>
+    <li><button (click)="onProjects()">Projetos</button></li>
+
+    <li><button (click)="onContato()">Contato</button></li>
+  </ul>
+</section>
